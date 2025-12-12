@@ -15,18 +15,14 @@ app.use(express.urlencoded({ extended: true }))
 app.use(morgan("dev"))
 
 // Configurar EJS como motor de plantillas.
+app.use(express.static('public'));
 app.set("view engine", "ejs")
 app.set("views", path.join(__dirname, "views"))
 
 // Configurar Express para servir páginas estáticas.
-//app.use(express.static("public"))
 
 app.use("/", routerIndex) // Usar rutas.
 app.use((req, res) => { // Error 404.
     res.status(404).render("404")
 })
 app.use(express.json()) // Para manejar JSON.
-
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "./public/index.html"))
-})
