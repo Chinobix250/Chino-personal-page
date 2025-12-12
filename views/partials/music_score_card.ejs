@@ -1,0 +1,24 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title"><%= title %></h5>
+        <p class="card-text"><%= description %></p>
+
+        <% if (musescoreLink) { %>
+            <a href="<%= musescoreLink %>" class="card-link">Ver en MuseScore</a>
+        <% } else { %>
+            <p class="card-text text-muted">Ver en MuseScore</p>
+        <% } %>
+        
+        <% if (pdfLink) { %>
+            <a href="<%= pdfLink %>" class="card-link">Descargar como PDF</a>
+        <% } else { %>
+            <p class="card-text text-muted">Descargar como PDF</p>
+        <% } %>
+        
+        <% if (youtubeLink) { %>
+            <a href="<%= youtubeLink %>" class="card-link">Ver en YouTube</a>
+        <% } else { %>
+            <p class="card-text text-muted">Ver en YouTube</p>
+        <% } %>
+    </div>
+</div>

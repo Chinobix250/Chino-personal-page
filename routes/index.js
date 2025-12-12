@@ -13,6 +13,10 @@ router.get("/programming", (req, res) => {
     res.render("programming")
 })
 
+router.get("/art", (req, res) => {
+    res.render("art")
+})
+
 router.get("/misc", (req, res) => {
     res.render("misc")
 })
