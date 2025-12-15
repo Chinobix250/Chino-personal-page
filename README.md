@@ -45,7 +45,7 @@ Proyecto desarrollado como portafolio para mostrar habilidades en desarrollo web
 ```bash
 # 1. Clonar el repositorio
 git clone https://github.com/Chinobix250/Chin-s-personal-page.git
-cd Chin-s-personal-page
+cd Chino-personal-page
 
 # 2. Instalar dependencias
 npm install
@@ -85,5 +85,5 @@ El sitio estará disponible en http://localhost:3000 (o el puerto configurado)
 ¡Gracias por visitar mi portafolio!
 
 ---
-**Desarrollado con pasión por Lucas (Chin) – 2025**
+**Desarrollado con pasión por Lucas (Chinō) – 2025**
 ```
