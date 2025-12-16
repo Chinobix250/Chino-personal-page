@@ -6,6 +6,7 @@ const port = process.env.PORT
 const path = require("path")
 const routerIndex = require("./routes/index")
 const morgan = require("morgan")
+app.use(express.static('public'));
 
 app.listen(port, () => { // Arranca el servidor.
     console.log(`Servidor corriendo en http://localhost:${port}.`)
@@ -15,7 +16,6 @@ app.use(express.urlencoded({ extended: true }))
 app.use(morgan("dev"))
 
 // Configurar EJS como motor de plantillas.
-app.use(express.static('public'));
 app.set("view engine", "ejs")
 app.set("views", path.join(__dirname, "views"))
 
