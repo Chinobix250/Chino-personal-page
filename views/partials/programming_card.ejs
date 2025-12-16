@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title"><%= title %></h5>
+        <p class="card-text"><%= description %></p>
+
+        <% if (githubLink) { %>
+            <a href="<%= githubLink %>" class="card-link">Ver en GitHub</a>
+        <% } else { %>
+            <p class="card-text text-muted">Ver en GitHub</p>
+        <% } %>
+    </div>
+</div>
